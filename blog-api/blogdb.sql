@@ -41,3 +41,14 @@ CREATE TABLE blogs (
   FOREIGN KEY (id_categoria) REFERENCES categorias(id) ON DELETE CASCADE,
   FOREIGN KEY (id_subcategoria) REFERENCES subcategorias(id) ON DELETE CASCADE
 );
+
+-- Tabla de comentarios
+CREATE TABLE comentarios (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  contenido TEXT NOT NULL,
+  id_usuario BIGINT NOT NULL,
+  id_blog BIGINT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
+  FOREIGN KEY (id_blog) REFERENCES blogs(id) ON DELETE CASCADE
+);

@@ -1,7 +1,7 @@
 {
   "name": "blog-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "| Command                        | Description                                                                                                                                   |\r | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |\r | npm init -y                    | Crea un archivo package.json con la configuración básica:                                                                                     |\r | npm install express cors       | express → crea el servidor web, cors → permite que tu frontend (por ejemplo, un HTML o React) haga peticiones al backend sin errores de CORS. |\r | npm install --save-dev nodemon | Nodemon recarga automáticamente el servidor cuando guardas cambios (solo para desarrollo).                                                    |\r | npm install mysql2             | Es para interactuar con bases de datos MySQL de manera eficiente                                                                              |\r | npm install bcrypt             | bcrypt se utiliza para hash seguro de contraseñas                                                                                             |\r | npm install dotenv             | Es para usar variables de entorno en el proyecto                                                                                              |",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
