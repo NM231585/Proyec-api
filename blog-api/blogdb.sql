@@ -52,3 +52,12 @@ CREATE TABLE comentarios (
   FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
   FOREIGN KEY (id_blog) REFERENCES blogs(id) ON DELETE CASCADE
 );
+
+--Tabla de tokens activos
+CREATE TABLE active_tokens (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  user_id BIGINT NOT NULL,
+  token TEXT not NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE,
+);
