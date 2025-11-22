@@ -8,18 +8,24 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-  <div class="max-w-5xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-lg">
+  <div class="max-w-7xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-lg">
     <h1 class="text-3xl font-bold mb-6 text-center text-indigo-600">Panel de Administración</h1>
 
     <!-- Tabs -->
-    <div class="flex justify-center gap-4 mb-6">
+    <div class="flex flex-wrap justify-center gap-2 mb-6">
       <button id="tab-users" class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600">Usuarios</button>
       <button id="tab-categories" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Categorías</button>
+      <button id="tab-subcategories" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Subcategorías</button>
+      <button id="tab-blogs" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Blogs</button>
+      <button id="tab-comments" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Comentarios</button>
     </div>
 
     <!-- Secciones -->
     <div id="section-users" class="block"></div>
     <div id="section-categories" class="hidden"></div>
+    <div id="section-subcategories" class="hidden"></div>
+    <div id="section-blogs" class="hidden"></div>
+    <div id="section-comments" class="hidden"></div>
   </div>
 
   <script type="module" src="./js/main.js"></script>
